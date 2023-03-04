@@ -1110,6 +1110,7 @@
     )
   )
 
+
   (junction (at 144.78 43.18) (diameter 0) (color 0 0 0 0)
     (uuid 0a1f7b49-1da8-460e-984e-179a77860213)
   )
@@ -3006,6 +3007,31 @@
     )
   )
 
+  (symbol (lib_id "power:+3.3V") (at 72.39 77.47 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 9bdd6fff-eae9-45e5-ae15-699483e0baae)
+    (property "Reference" "#PWR022" (at 72.39 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 72.39 73.66 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 72.39 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 72.39 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 649da2bf-100a-4206-8d93-6845cb117d44))
+    (instances
+      (project "electrium-esc-v2"
+        (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
+          (reference "#PWR022") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:+3V3") (at 119.38 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9f5b9628-a8bb-4a69-a8e1-ffe1ceb3278b)
@@ -3275,36 +3301,6 @@
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
           (reference "R4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3V3") (at 72.39 77.47 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid be1269a4-b645-4699-9634-b3c053cf2a99)
-    (property "Reference" "#PWR07" (at 72.39 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 72.771 73.0758 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 72.39 77.47 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 72.39 77.47 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e66d1075-5b1e-47c6-a769-ff84681bcf64))
-    (instances
-      (project "RP2040_minimal"
-        (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR07") (unit 1)
-        )
-      )
-      (project "electrium-esc-v2"
-        (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR022") (unit 1)
         )
       )
     )
