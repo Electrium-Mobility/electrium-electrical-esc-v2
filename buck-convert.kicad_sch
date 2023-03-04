@@ -372,6 +372,7 @@
     )
   )
 
+
   (junction (at 119.38 74.93) (diameter 0) (color 0 0 0 0)
     (uuid 00c22889-b52f-4aee-a123-5194e9152cf7)
   )
@@ -581,19 +582,13 @@
     (uuid fe55f326-ecb6-4db5-9bc2-3ef0d58db134)
   )
 
-  (global_label "PWR_SRC" (shape input) (at 105.41 74.93 180) (fields_autoplaced)
+  (hierarchical_label "PWR_SRC" (shape input) (at 181.61 48.26 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid b5f07dbe-664f-4c56-9f1f-efd7eeec63cc)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 93.7957 74.93 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
+    (uuid 1aec47f4-a863-4e47-bc27-01895463ad34)
   )
-  (global_label "PWR_SRC" (shape input) (at 181.61 48.26 180) (fields_autoplaced)
+  (hierarchical_label "PWR_SRC" (shape input) (at 105.41 74.93 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid ff13c147-bf3f-4148-a672-3424abf1c201)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 169.9957 48.26 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
+    (uuid a8243822-d886-425e-9134-b0a89b7e772a)
   )
 
   (symbol (lib_id "Device:C") (at 119.38 81.28 0) (unit 1)

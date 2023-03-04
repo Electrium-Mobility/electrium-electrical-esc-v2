@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP VG039NCHXTB204
+D Variable Resistors +/-25% 200KOhms +/-250 ppm/C SMD RoHS
+K
+F https://datasheet.lcsc.com/szlcsc/Hokuriku-Elec-Industry-VG039NCHXTB204_C128551.pdf
+$ENDCMP
+#
+#End Doc Library
