@@ -372,7 +372,6 @@
     )
   )
 
-
   (junction (at 119.38 74.93) (diameter 0) (color 0 0 0 0)
     (uuid 00c22889-b52f-4aee-a123-5194e9152cf7)
   )
@@ -417,6 +416,9 @@
   )
   (junction (at 215.9 74.93) (diameter 0) (color 0 0 0 0)
     (uuid e2876607-2444-44e3-9ae9-8cedbe6903d1)
+  )
+  (junction (at 229.87 74.93) (diameter 0) (color 0 0 0 0)
+    (uuid ff0da18e-1998-4048-832f-bf7b9a2dc47a)
   )
 
   (no_connect (at 149.86 90.17) (uuid bd67774d-bdb8-40b0-b028-c8cecef96fe1))
@@ -473,7 +475,7 @@
     (stroke (width 0) (type default))
     (uuid 59802858-556d-43c5-aae8-03ee6d76d0ea)
   )
-  (wire (pts (xy 224.79 74.93) (xy 231.14 74.93))
+  (wire (pts (xy 224.79 74.93) (xy 229.87 74.93))
     (stroke (width 0) (type default))
     (uuid 5ab3bed1-13cb-4331-b42f-1ecb58cd52fe)
   )
@@ -484,6 +486,10 @@
   (wire (pts (xy 165.1 77.47) (xy 170.18 77.47))
     (stroke (width 0) (type default))
     (uuid 6a98e7cc-f076-416a-be4f-02061578e148)
+  )
+  (wire (pts (xy 229.87 74.93) (xy 233.68 74.93))
+    (stroke (width 0) (type default))
+    (uuid 6ac1b5f2-c4da-4c0b-a410-a106bc018c36)
   )
   (wire (pts (xy 107.95 100.33) (xy 119.38 100.33))
     (stroke (width 0) (type default))
@@ -582,19 +588,21 @@
     (uuid fe55f326-ecb6-4db5-9bc2-3ef0d58db134)
   )
 
-  (global_label "PWR_SRC" (shape input) (at 105.41 74.93 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid b5f07dbe-664f-4c56-9f1f-efd7eeec63cc)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 93.7957 74.93 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
   (global_label "PWR_SRC" (shape input) (at 181.61 48.26 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid ff13c147-bf3f-4148-a672-3424abf1c201)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 169.9957 48.26 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
+  )
+
+  (hierarchical_label "PWR_SRC" (shape input) (at 105.41 74.93 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 10ce1ec2-bff9-4891-ab7d-ebb83992c058)
+  )
+  (hierarchical_label "3V3_OUT" (shape input) (at 233.68 74.93 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 3b5cb723-1761-44dc-97a1-d21e910e2148)
   )
 
   (symbol (lib_id "Device:C") (at 119.38 81.28 0) (unit 1)
@@ -760,7 +768,7 @@
   (symbol (lib_id "power:GND") (at 133.35 67.31 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3d89fc5c-9e3a-4096-854d-065169fa1020)
-    (property "Reference" "#PWR038" (at 133.35 60.96 0)
+    (property "Reference" "#PWR0102" (at 133.35 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 133.35 63.5 0)
@@ -776,7 +784,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/dedba472-5e9c-489a-b80e-963af35f7eb6"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
     )
@@ -811,7 +819,7 @@
   (symbol (lib_id "power:GND") (at 156.21 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 51ec800e-6af2-493f-bb6a-07bdade1a54a)
-    (property "Reference" "#PWR039" (at 156.21 106.68 0)
+    (property "Reference" "#PWR0101" (at 156.21 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 156.21 105.41 0)
@@ -827,7 +835,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/dedba472-5e9c-489a-b80e-963af35f7eb6"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR0101") (unit 1)
         )
       )
     )
@@ -911,26 +919,26 @@
     )
   )
 
-  (symbol (lib_id "power:+3.3V") (at 231.14 74.93 0) (unit 1)
+  (symbol (lib_id "power:+3.3V") (at 229.87 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9b01c6fc-030f-44b2-8b2d-f8c5b696035c)
-    (property "Reference" "#PWR040" (at 231.14 78.74 0)
+    (property "Reference" "#PWR0104" (at 229.87 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 231.14 71.12 0)
+    (property "Value" "+3.3V" (at 229.87 71.12 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 231.14 74.93 0)
+    (property "Footprint" "" (at 229.87 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 231.14 74.93 0)
+    (property "Datasheet" "" (at 229.87 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e5602bb6-eb70-49a5-9f88-f847c05c80eb))
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/dedba472-5e9c-489a-b80e-963af35f7eb6"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR0104") (unit 1)
         )
       )
     )
@@ -939,7 +947,7 @@
   (symbol (lib_id "power:GND") (at 185.42 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9e8653dc-6cb1-420d-949b-fe3b4a6b3844)
-    (property "Reference" "#PWR043" (at 185.42 62.23 0)
+    (property "Reference" "#PWR0103" (at 185.42 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 185.42 60.96 0)
@@ -955,7 +963,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/dedba472-5e9c-489a-b80e-963af35f7eb6"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR0103") (unit 1)
         )
       )
     )
