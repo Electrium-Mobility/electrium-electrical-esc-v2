@@ -491,6 +491,10 @@
     [
       "dedba472-5e9c-489a-b80e-963af35f7eb6",
       "Buck Converter (LMR160006XDDCR)"
+    ],
+    [
+      "5d5f53ac-6241-4ef8-8b88-68f3e6833293",
+      "CAN"
     ]
   ],
   "text_variables": {}
