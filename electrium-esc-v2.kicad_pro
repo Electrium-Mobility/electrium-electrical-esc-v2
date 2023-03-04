@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -510,7 +510,7 @@
     ],
     [
       "3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f",
-      "MCU (RP2040)"
+      "MCU"
     ],
     [
       "7b8d4e0f-f5b3-4d23-9d20-d147bb4bf07d",
@@ -526,7 +526,7 @@
     ],
     [
       "dedba472-5e9c-489a-b80e-963af35f7eb6",
-      "Buck Converter (LMR36510FADDAR)"
+      "Buck Converter (LMR160006XDDCR)"
     ],
     [
       "5d5f53ac-6241-4ef8-8b88-68f3e6833293",
