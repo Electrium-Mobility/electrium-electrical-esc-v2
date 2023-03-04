@@ -457,18 +457,8 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "fix_passive_vals": false,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 0,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
-    "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -501,6 +491,10 @@
     [
       "dedba472-5e9c-489a-b80e-963af35f7eb6",
       "Buck Converter (LMR160006XDDCR)"
+    ],
+    [
+      "5d5f53ac-6241-4ef8-8b88-68f3e6833293",
+      "CAN"
     ]
   ],
   "text_variables": {}
