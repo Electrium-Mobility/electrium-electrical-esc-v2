@@ -284,7 +284,7 @@
   (symbol (lib_id "RF:NRF24L01_Breakout") (at 139.7 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 51a19e7e-eadb-43ef-919a-11c3d2c1f8bc)
-    (property "Reference" "U5" (at 144.78 87.63 0)
+    (property "Reference" "U1" (at 144.78 87.63 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "NRF24L01_Breakout" (at 144.78 114.3 0)
@@ -307,12 +307,12 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/81cbbca5-64b8-44af-87f0-aec946520ae6"
-          (reference "U5") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
       (project "electrium-esc"
         (path "/d277d506-2f4d-497b-a498-1ff059e212d2/9d2b8e53-abda-48f4-a6e0-4b62c24d8218"
-          (reference "U?") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -321,7 +321,7 @@
   (symbol (lib_id "power:GND") (at 146.05 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 641c9e41-2dd9-4aab-b6a3-c5956edf8869)
-    (property "Reference" "#PWR037" (at 146.05 86.36 0)
+    (property "Reference" "#PWR03" (at 146.05 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 146.05 83.82 0)
@@ -337,12 +337,12 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/81cbbca5-64b8-44af-87f0-aec946520ae6"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
       (project "electrium-esc"
         (path "/d277d506-2f4d-497b-a498-1ff059e212d2/9d2b8e53-abda-48f4-a6e0-4b62c24d8218"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR072") (unit 1)
         )
       )
     )
@@ -351,13 +351,13 @@
   (symbol (lib_id "Device:C") (at 146.05 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7bbc2e48-589f-47ec-944d-3d871b54c46c)
-    (property "Reference" "C24" (at 149.86 74.9299 0)
+    (property "Reference" "C1" (at 149.86 74.9299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47u" (at 149.86 77.4699 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" (at 147.0152 80.01 0)
+    (property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" (at 147.0152 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 146.05 76.2 0)
@@ -368,12 +368,12 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/81cbbca5-64b8-44af-87f0-aec946520ae6"
-          (reference "C24") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
       (project "electrium-esc"
         (path "/d277d506-2f4d-497b-a498-1ff059e212d2/9d2b8e53-abda-48f4-a6e0-4b62c24d8218"
-          (reference "C?") (unit 1)
+          (reference "C75") (unit 1)
         )
       )
     )
@@ -382,7 +382,7 @@
   (symbol (lib_id "power:+3.3V") (at 139.7 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9fed7c94-cc74-46a1-b773-3e4cbe95daa1)
-    (property "Reference" "#PWR035" (at 139.7 73.66 0)
+    (property "Reference" "#PWR01" (at 139.7 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 139.7 64.77 0)
@@ -398,12 +398,12 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/81cbbca5-64b8-44af-87f0-aec946520ae6"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
       (project "electrium-esc"
         (path "/d277d506-2f4d-497b-a498-1ff059e212d2/9d2b8e53-abda-48f4-a6e0-4b62c24d8218"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR071") (unit 1)
         )
       )
     )
@@ -412,7 +412,7 @@
   (symbol (lib_id "power:GND") (at 139.7 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a986f36c-f663-43f5-9d4b-dd349d86d1d8)
-    (property "Reference" "#PWR036" (at 139.7 121.92 0)
+    (property "Reference" "#PWR02" (at 139.7 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 139.7 119.38 0)
@@ -428,12 +428,12 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/81cbbca5-64b8-44af-87f0-aec946520ae6"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
       (project "electrium-esc"
         (path "/d277d506-2f4d-497b-a498-1ff059e212d2/9d2b8e53-abda-48f4-a6e0-4b62c24d8218"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR073") (unit 1)
         )
       )
     )

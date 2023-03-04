@@ -297,7 +297,7 @@
   (symbol (lib_id "Interface_CAN_LIN:SN65HVD233") (at 143.51 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3869fa93-b636-419d-8241-d12b9b47aaed)
-    (property "Reference" "U?" (at 145.4659 85.09 0)
+    (property "Reference" "U1" (at 145.4659 85.09 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SN65HVD233" (at 145.4659 87.63 0)
@@ -320,7 +320,7 @@
     (instances
       (project "CAN"
         (path "/02b8491d-2d12-4025-9131-d09e9a95b074"
-          (reference "U?") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
       (project "electrium-esc-v2"
@@ -334,7 +334,7 @@
   (symbol (lib_id "power:GND") (at 143.51 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a2125c6b-9cf2-4081-946f-c7c1b63d0845)
-    (property "Reference" "#PWR?" (at 143.51 114.3 0)
+    (property "Reference" "#PWR02" (at 143.51 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 143.51 113.03 0)
@@ -350,12 +350,12 @@
     (instances
       (project "CAN"
         (path "/02b8491d-2d12-4025-9131-d09e9a95b074"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/5d5f53ac-6241-4ef8-8b88-68f3e6833293"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
       )
     )
@@ -364,13 +364,13 @@
   (symbol (lib_id "Device:C") (at 168.91 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bc94224c-f777-423e-850e-4dc5af98255e)
-    (property "Reference" "C30" (at 172.72 94.615 0)
+    (property "Reference" "C25" (at 172.72 94.615 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1u" (at 172.72 97.155 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 169.8752 99.06 0)
+    (property "Footprint" "" (at 169.8752 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 168.91 95.25 0)
@@ -381,7 +381,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/5d5f53ac-6241-4ef8-8b88-68f3e6833293"
-          (reference "C30") (unit 1)
+          (reference "C25") (unit 1)
         )
       )
     )
@@ -390,7 +390,7 @@
   (symbol (lib_id "power:+3.3V") (at 143.51 77.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d8d7f23a-b423-4900-bd88-010869c2f493)
-    (property "Reference" "#PWR?" (at 143.51 81.28 0)
+    (property "Reference" "#PWR01" (at 143.51 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 143.51 73.66 0)
@@ -406,12 +406,12 @@
     (instances
       (project "CAN"
         (path "/02b8491d-2d12-4025-9131-d09e9a95b074"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/5d5f53ac-6241-4ef8-8b88-68f3e6833293"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
