@@ -358,10 +358,10 @@
       )
     )
     (symbol "MCU_RaspberryPi_RP2040:RP2040" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at -29.21 49.53 0)
+      (property "Reference" "U3" (at -27.94 49.53 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "RP2040" (at 24.13 -49.53 0)
+      (property "Value" "RP2040" (at 24.13 -50.8 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "RP2040_minimal:RP2040-QFN-56" (at -19.05 0 0)
@@ -457,7 +457,7 @@
           (name "SWD" (effects (font (size 1.27 1.27))))
           (number "25" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at -31.75 -20.32 0) (length 2.54)
+        (pin free line (at -31.75 -20.32 0) (length 2.54)
           (name "RUN" (effects (font (size 1.27 1.27))))
           (number "26" (effects (font (size 1.27 1.27))))
         )
@@ -818,11 +818,11 @@
       )
     )
     (symbol "Regulator_Linear:NCP1117-3.3_SOT223" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at -3.81 3.175 0)
+      (property "Reference" "U2" (at 0 6.1468 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "NCP1117-3.3_SOT223" (at 0 3.175 0)
-        (effects (font (size 1.27 1.27)) (justify left))
+      (property "Value" "NCP1117-3.3_SOT223" (at 0 3.8354 0)
+        (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 0 5.08 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -850,7 +850,7 @@
           (name "GND" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin power_out line (at 7.62 0 180) (length 2.54)
+        (pin free line (at 7.62 0 180) (length 2.54)
           (name "VO" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
@@ -960,58 +960,6 @@
       (symbol "+3.3V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
           (name "+3.3V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+3V3" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+3V3_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+3V3_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3V3" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1227,6 +1175,7 @@
   )
 
   (no_connect (at 39.37 44.45) (uuid 6e146a6b-c26e-4baf-a8b6-2eacc5945c98))
+  (no_connect (at 212.09 147.32) (uuid 93942140-f5f3-4c13-af0c-c81ad93ecc94))
 
   (wire (pts (xy 163.83 48.26) (xy 166.37 48.26))
     (stroke (width 0) (type default))
@@ -2147,10 +2096,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9d7be6a1-3e36-4e30-b6b2-03e2d7acbc39)
   )
-  (label "NRF_CSn" (at 201.93 81.28 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 9e361fe6-7d3f-4745-a35d-f169f67a94a0)
-  )
   (label "SWD" (at 54.61 171.45 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a197c036-1a71-4b20-8a8a-d7acdb271050)
@@ -2183,10 +2128,6 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid cf80fb6e-ef5f-46e9-9029-4cbff965e96e)
   )
-  (label "RUN" (at 121.92 132.08 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid d1f13fe4-6cd1-4406-a91e-e2cd1eabb827)
-  )
   (label "NRF_MOSI" (at 201.93 86.36 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d2b9896b-8240-491c-b8ce-4a10b70d8ee0)
@@ -2198,10 +2139,6 @@
   (label "QSPI_SD1" (at 119.38 86.36 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid dd027e2e-d242-467d-942e-2f44d910ffcd)
-  )
-  (label "NRF_SCLK" (at 201.93 83.82 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid e546237c-66e2-434a-9955-fd5bd29217f0)
   )
   (label "QSPI_SCLK" (at 48.26 107.95 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -2312,7 +2249,7 @@
   (symbol (lib_id "power:GND") (at 72.39 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0373048e-90c7-4415-a936-c3147a9bfc18)
-    (property "Reference" "#PWR08" (at 72.39 123.19 0)
+    (property "Reference" "#PWR?" (at 72.39 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 68.58 118.11 0)
@@ -2328,12 +2265,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -2342,13 +2279,13 @@
   (symbol (lib_id "Device:R") (at 57.15 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 098e01c1-95de-4e81-98a2-3667c064062c)
-    (property "Reference" "R2" (at 58.928 86.4616 0)
+    (property "Reference" "R?" (at 58.928 86.4616 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "DNF" (at 58.928 88.773 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 55.372 87.63 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 55.372 87.63 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 57.15 87.63 0)
@@ -2359,12 +2296,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "R2") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "R6") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -2373,7 +2310,7 @@
   (symbol (lib_id "power:GND") (at 124.46 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 127a1419-8cc1-46f8-bf5e-ac8279020469)
-    (property "Reference" "#PWR012" (at 124.46 45.72 0)
+    (property "Reference" "#PWR?" (at 124.46 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 124.587 43.7642 0)
@@ -2389,12 +2326,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -2403,7 +2340,7 @@
   (symbol (lib_id "power:GND") (at 78.74 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1312d32c-c40e-482e-b33d-30ed9fe047a1)
-    (property "Reference" "#PWR011" (at 78.74 95.25 0)
+    (property "Reference" "#PWR?" (at 78.74 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 82.55 90.17 0)
@@ -2419,12 +2356,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -2433,13 +2370,13 @@
   (symbol (lib_id "Device:R") (at 212.09 68.58 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 17a57466-e94f-4e1a-850c-c9526e81c7e6)
-    (property "Reference" "R3" (at 212.09 66.04 90)
+    (property "Reference" "R?" (at 212.09 66.04 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "27" (at 212.09 68.58 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 212.09 66.802 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 212.09 66.802 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 212.09 68.58 0)
@@ -2450,12 +2387,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "R3") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "R3") (unit 1)
+          (reference "R6") (unit 1)
         )
       )
     )
@@ -2464,13 +2401,13 @@
   (symbol (lib_id "Device:C") (at 224.79 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2149ab8d-792a-417c-82c9-c58c4371aeff)
-    (property "Reference" "C13" (at 227.711 31.8516 0)
+    (property "Reference" "C?" (at 227.711 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 227.711 34.163 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 225.7552 36.83 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 225.7552 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 224.79 33.02 0)
@@ -2481,12 +2418,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C13") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C11") (unit 1)
+          (reference "C13") (unit 1)
         )
       )
     )
@@ -2495,13 +2432,13 @@
   (symbol (lib_id "Device:C") (at 44.45 134.62 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 223676fe-f95b-4c7a-9a6b-e1ae48a4f4ba)
-    (property "Reference" "C2" (at 45.6184 137.541 0)
+    (property "Reference" "C?" (at 45.6184 137.541 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "27p" (at 43.307 137.541 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 40.64 135.5852 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 40.64 135.5852 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 44.45 134.62 0)
@@ -2512,12 +2449,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C2") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C16") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -2526,7 +2463,7 @@
   (symbol (lib_id "power:GND") (at 152.4 165.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2a3e973c-abdf-4657-b557-491e4dfca135)
-    (property "Reference" "#PWR015" (at 152.4 171.45 0)
+    (property "Reference" "#PWR?" (at 152.4 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 152.527 169.4942 0)
@@ -2542,12 +2479,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -2556,7 +2493,7 @@
   (symbol (lib_id "power:GND") (at 57.15 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 34908c6f-6da0-4f9a-958b-16eb6bc84c95)
-    (property "Reference" "#PWR04" (at 57.15 50.8 0)
+    (property "Reference" "#PWR?" (at 57.15 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 53.34 45.72 0)
@@ -2572,12 +2509,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -2586,7 +2523,7 @@
   (symbol (lib_id "power:VBUS") (at 46.99 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 37348405-b9eb-4fb5-9b9c-cfda0c030c0a)
-    (property "Reference" "#PWR03" (at 46.99 36.83 0)
+    (property "Reference" "#PWR?" (at 46.99 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 47.371 28.6258 0)
@@ -2602,12 +2539,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -2616,13 +2553,13 @@
   (symbol (lib_id "Device:C") (at 236.22 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 42302075-d2d3-4372-a253-0a71da3f4b58)
-    (property "Reference" "C14" (at 239.141 31.8516 0)
+    (property "Reference" "C?" (at 239.141 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 239.141 34.163 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 237.1852 36.83 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 237.1852 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 236.22 33.02 0)
@@ -2633,12 +2570,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C14") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C12") (unit 1)
+          (reference "C14") (unit 1)
         )
       )
     )
@@ -2647,7 +2584,7 @@
   (symbol (lib_id "power:GND") (at 274.32 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 42bfac0a-54e4-4a73-89cc-d71a99568c26)
-    (property "Reference" "#PWR025" (at 274.32 46.99 0)
+    (property "Reference" "#PWR?" (at 274.32 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 270.51 41.91 0)
@@ -2663,25 +2600,25 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 63.5 179.07 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 493d5039-2d56-471c-90a6-db9961849761)
-    (property "Reference" "#PWR017" (at 59.69 179.07 0)
+  (symbol (lib_id "power:+3.3V") (at 63.5 179.07 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 53fd537b-f111-4f34-961e-8c3803e730b6)
+    (property "Reference" "#PWR012" (at 59.69 179.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3" (at 67.8942 179.451 0)
-      (effects (font (size 1.27 1.27)))
+    (property "Value" "+3.3V" (at 67.31 179.705 90)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (at 63.5 179.07 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2689,16 +2626,11 @@
     (property "Datasheet" "" (at 63.5 179.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1e446c81-2989-4382-b359-b4e256fd6a99))
+    (pin "1" (uuid f0de0ada-cd24-4bde-8b61-7d1058bcf1e3))
     (instances
-      (project "RP2040_minimal"
-        (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR017") (unit 1)
-        )
-      )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -2707,13 +2639,13 @@
   (symbol (lib_id "Device:Crystal") (at 59.69 139.7 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5bb0c884-d876-433a-bf43-fc86accbee7a)
-    (property "Reference" "Y1" (at 63.0174 138.5316 90)
+    (property "Reference" "Y?" (at 63.0174 138.5316 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ABLS-12.000MHZ-B4-T" (at 53.34 132.08 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "RP2040_minimal:Crystal_SMD_HC49-US" (at 59.69 139.7 0)
+    (property "Footprint" "ext_footprint:Crystal_SMD_HC49-US" (at 59.69 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 59.69 139.7 0)
@@ -2724,7 +2656,7 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "Y1") (unit 1)
+          (reference "Y?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
@@ -2738,13 +2670,13 @@
   (symbol (lib_id "Device:C") (at 274.32 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 60e62ca2-2732-4399-af4b-9324ddbe9a66)
-    (property "Reference" "C17" (at 277.241 34.3916 0)
+    (property "Reference" "C?" (at 277.241 34.3916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 277.241 36.703 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 275.2852 39.37 0)
+    (property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" (at 275.2852 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 274.32 35.56 0)
@@ -2755,12 +2687,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C17") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C23") (unit 1)
+          (reference "C17") (unit 1)
         )
       )
     )
@@ -2769,7 +2701,7 @@
   (symbol (lib_id "Regulator_Linear:NCP1117-3.3_SOT223") (at 74.93 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6997e739-c715-40d1-a2e0-efa1f5d8ccb2)
-    (property "Reference" "U1" (at 74.93 28.1432 0)
+    (property "Reference" "U?" (at 74.93 28.1432 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "NCP1117-3.3_SOT223" (at 74.93 30.4546 0)
@@ -2787,7 +2719,7 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "U1") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
@@ -2801,7 +2733,7 @@
   (symbol (lib_id "power:GND") (at 135.89 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6bb7fbcf-8bef-47c8-bfb8-9aec2fa044e9)
-    (property "Reference" "#PWR013" (at 135.89 59.69 0)
+    (property "Reference" "#PWR?" (at 135.89 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 136.017 57.7342 0)
@@ -2817,12 +2749,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -2831,13 +2763,13 @@
   (symbol (lib_id "Device:C") (at 44.45 144.78 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6d564916-d9ff-461a-bd2e-633b6e79539c)
-    (property "Reference" "C3" (at 45.6184 147.701 0)
+    (property "Reference" "C?" (at 45.6184 147.701 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "27p" (at 43.307 147.701 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 40.64 145.7452 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 40.64 145.7452 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 44.45 144.78 0)
@@ -2848,12 +2780,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C3") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C17") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -2862,7 +2794,7 @@
   (symbol (lib_id "power:+3.3V") (at 181.61 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 763c2f1e-0369-436b-8173-8b3fb8ecb9fc)
-    (property "Reference" "#PWR011" (at 181.61 30.48 0)
+    (property "Reference" "#PWR025" (at 181.61 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 181.61 22.86 0)
@@ -2878,7 +2810,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
@@ -2887,13 +2819,13 @@
   (symbol (lib_id "Device:C") (at 135.89 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 79b950ac-64e5-4bdc-891d-aa89df5bfb09)
-    (property "Reference" "C7" (at 138.811 31.8516 0)
+    (property "Reference" "C?" (at 138.811 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 138.811 34.163 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 136.8552 36.83 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 136.8552 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 135.89 33.02 0)
@@ -2904,12 +2836,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C7") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C5") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -2918,7 +2850,7 @@
   (symbol (lib_id "power:GND") (at 165.1 165.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 90623d06-ab41-40de-8238-0dfa9971c2b0)
-    (property "Reference" "#PWR016" (at 165.1 171.45 0)
+    (property "Reference" "#PWR?" (at 165.1 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 165.227 169.4942 0)
@@ -2934,12 +2866,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -2948,7 +2880,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x07") (at 232.41 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 90c2be6f-2944-4529-a6be-fe0067aa882a)
-    (property "Reference" "J6" (at 234.95 98.425 0)
+    (property "Reference" "J5" (at 234.95 98.425 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "GPIO" (at 234.95 100.965 0)
@@ -2970,7 +2902,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "J6") (unit 1)
+          (reference "J5") (unit 1)
         )
       )
     )
@@ -2979,13 +2911,13 @@
   (symbol (lib_id "Device:C") (at 259.08 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 90cb8eb3-cd5a-4f6b-b4ef-fcbd4b63b977)
-    (property "Reference" "C16" (at 262.001 31.8516 0)
+    (property "Reference" "C?" (at 262.001 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 262.001 34.163 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 260.0452 36.83 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 260.0452 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 259.08 33.02 0)
@@ -2996,12 +2928,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C16") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C14") (unit 1)
+          (reference "C16") (unit 1)
         )
       )
     )
@@ -3010,7 +2942,7 @@
   (symbol (lib_id "power:+3.3V") (at 72.39 77.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9bdd6fff-eae9-45e5-ae15-699483e0baae)
-    (property "Reference" "#PWR022" (at 72.39 81.28 0)
+    (property "Reference" "#PWR013" (at 72.39 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 72.39 73.66 0)
@@ -3026,37 +2958,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR022") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3V3") (at 119.38 132.08 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 9f5b9628-a8bb-4a69-a8e1-ffe1ceb3278b)
-    (property "Reference" "#PWR017" (at 119.38 135.89 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 119.761 127.6858 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 119.38 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 119.38 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 08037e97-80f1-4f09-ac53-31ec7aaad89c))
-    (instances
-      (project "RP2040_minimal"
-        (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR017") (unit 1)
-        )
-      )
-      (project "electrium-esc-v2"
-        (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -3065,7 +2967,7 @@
   (symbol (lib_id "power:GND") (at 62.23 173.99 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a1604089-4bc2-4b5a-bda1-523eabce0d73)
-    (property "Reference" "#PWR015" (at 68.58 173.99 0)
+    (property "Reference" "#PWR?" (at 68.58 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 67.31 173.99 90)
@@ -3081,12 +2983,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -3095,13 +2997,13 @@
   (symbol (lib_id "Device:C") (at 213.36 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a54e63c5-cadb-4868-bb1c-2f574393f83e)
-    (property "Reference" "C12" (at 216.281 31.8516 0)
+    (property "Reference" "C?" (at 216.281 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 216.281 34.163 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 214.3252 36.83 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 214.3252 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 213.36 33.02 0)
@@ -3112,12 +3014,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C12") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C10") (unit 1)
+          (reference "C12") (unit 1)
         )
       )
     )
@@ -3126,13 +3028,13 @@
   (symbol (lib_id "Device:R") (at 41.91 102.87 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ad61832b-0186-4529-9fb1-73c68651eea2)
-    (property "Reference" "R1" (at 41.91 97.6122 90)
+    (property "Reference" "R?" (at 41.91 97.6122 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 41.91 99.9236 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 41.91 101.092 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 41.91 101.092 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 41.91 102.87 0)
@@ -3143,12 +3045,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "R5") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -3157,13 +3059,13 @@
   (symbol (lib_id "RP2040_minimal-rescue:USB_B_Micro-Connector") (at 31.75 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b60c50c0-e1a3-43d1-8bd0-b5cac20d989f)
-    (property "Reference" "J1" (at 27.94 29.21 0)
+    (property "Reference" "J?" (at 27.94 29.21 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "USB_B_Micro" (at 45.72 49.53 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "RP2040_minimal:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal_modified" (at 35.56 40.64 0)
+    (property "Footprint" "Connector_USB:USB_Micro-B_Molex-105017-0001" (at 35.56 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 35.56 40.64 0)
@@ -3178,12 +3080,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "J1") (unit 1)
+          (reference "J?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "J2") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -3192,13 +3094,13 @@
   (symbol (lib_id "MCU_RaspberryPi_RP2040:RP2040") (at 165.1 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b99190b6-ab51-40e3-8447-b3c0eec1cbdf)
-    (property "Reference" "U3" (at 137.16 62.23 0)
+    (property "Reference" "U?" (at 137.16 62.23 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "RP2040" (at 189.23 162.56 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "RP2040_minimal:RP2040-QFN-56" (at 146.05 111.76 0)
+    (property "Footprint" "ext_footprint:RP2040-QFN-56" (at 146.05 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 146.05 111.76 0)
@@ -3264,7 +3166,7 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "U3") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
@@ -3278,13 +3180,13 @@
   (symbol (lib_id "Device:R") (at 212.09 71.12 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bad6d998-af84-4a65-95cc-fa97e0106ba3)
-    (property "Reference" "R4" (at 212.09 73.66 90)
+    (property "Reference" "R?" (at 212.09 73.66 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "27" (at 212.09 71.12 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 212.09 69.342 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 212.09 69.342 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 212.09 71.12 0)
@@ -3295,12 +3197,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "R4") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "R4") (unit 1)
+          (reference "R7") (unit 1)
         )
       )
     )
@@ -3309,7 +3211,7 @@
   (symbol (lib_id "RP2040_minimal-rescue:W25Q128JVS-Memory_Flash") (at 72.39 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bf97f003-f584-49b0-b7a1-cc894d776d3d)
-    (property "Reference" "U2" (at 63.5 95.25 0)
+    (property "Reference" "U?" (at 63.5 95.25 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "W25Q128JVS" (at 80.01 115.57 0)
@@ -3332,12 +3234,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "U2") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "U4") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
     )
@@ -3346,7 +3248,7 @@
   (symbol (lib_id "power:GND") (at 259.08 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c17d9468-1820-4868-86ad-896da505666a)
-    (property "Reference" "#PWR023" (at 259.08 46.99 0)
+    (property "Reference" "#PWR?" (at 259.08 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 259.207 45.0342 0)
@@ -3362,12 +3264,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -3376,7 +3278,7 @@
   (symbol (lib_id "power:GND") (at 74.93 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c2e81bfd-f364-488d-90c9-7f78e988b6c7)
-    (property "Reference" "#PWR05" (at 74.93 49.53 0)
+    (property "Reference" "#PWR?" (at 74.93 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 71.12 44.45 0)
@@ -3392,12 +3294,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -3406,13 +3308,13 @@
   (symbol (lib_id "Device:C") (at 247.65 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c2eadc67-b059-4666-b34b-b608862a5248)
-    (property "Reference" "C15" (at 250.571 31.8516 0)
+    (property "Reference" "C?" (at 250.571 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 250.571 34.163 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 248.6152 36.83 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 248.6152 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 247.65 33.02 0)
@@ -3423,12 +3325,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C15") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C13") (unit 1)
+          (reference "C15") (unit 1)
         )
       )
     )
@@ -3437,13 +3339,13 @@
   (symbol (lib_id "Device:C") (at 92.71 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c48edff1-754a-46e1-b968-7b919854f8e1)
-    (property "Reference" "C4" (at 95.631 38.2016 0)
+    (property "Reference" "C?" (at 95.631 38.2016 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 95.631 40.513 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 93.6752 43.18 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 93.6752 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 92.71 39.37 0)
@@ -3454,12 +3356,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C4") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C3") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -3468,13 +3370,13 @@
   (symbol (lib_id "Device:C") (at 78.74 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c7cc8853-c569-4cb7-bc58-f48dfb887380)
-    (property "Reference" "C5" (at 81.661 82.6516 0)
+    (property "Reference" "C?" (at 81.661 82.6516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 81.661 84.963 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 79.7052 87.63 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 79.7052 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 78.74 83.82 0)
@@ -3485,12 +3387,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C5") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C15") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -3499,13 +3401,13 @@
   (symbol (lib_id "Device:C") (at 57.15 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c7ddc69e-5661-444d-804e-f1d98a5253a4)
-    (property "Reference" "C1" (at 60.071 38.2016 0)
+    (property "Reference" "C?" (at 60.071 38.2016 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 60.071 40.513 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 58.1152 43.18 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 58.1152 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 57.15 39.37 0)
@@ -3516,12 +3418,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C1") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C2") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -3530,13 +3432,13 @@
   (symbol (lib_id "Device:C") (at 190.5 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c8c3820e-e6a7-4f7c-9034-f7c36d8216c1)
-    (property "Reference" "C9" (at 193.421 31.8516 0)
+    (property "Reference" "C?" (at 193.421 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 193.421 34.163 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 191.4652 36.83 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 191.4652 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 190.5 33.02 0)
@@ -3547,12 +3449,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C9") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C7") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -3561,7 +3463,7 @@
   (symbol (lib_id "power:+3.3V") (at 274.32 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c96ba7d9-64c7-4ade-aa58-639f31757f16)
-    (property "Reference" "#PWR018" (at 274.32 33.02 0)
+    (property "Reference" "#PWR028" (at 274.32 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 274.32 25.4 0)
@@ -3577,7 +3479,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -3586,7 +3488,7 @@
   (symbol (lib_id "power:GND") (at 92.71 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ca87920b-c251-4735-b466-d9b7e81ce8ca)
-    (property "Reference" "#PWR010" (at 92.71 50.8 0)
+    (property "Reference" "#PWR?" (at 92.71 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 88.9 45.72 0)
@@ -3602,12 +3504,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -3616,7 +3518,7 @@
   (symbol (lib_id "power:+1V1") (at 144.78 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cda4f168-9375-48d0-8dc0-75516aa8bcb3)
-    (property "Reference" "#PWR014" (at 144.78 30.48 0)
+    (property "Reference" "#PWR?" (at 144.78 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+1V1" (at 145.161 22.2758 0)
@@ -3632,12 +3534,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -3646,13 +3548,13 @@
   (symbol (lib_id "Device:C") (at 124.46 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cde27bc2-d8c6-4e8e-b9b1-ae1de6c84370)
-    (property "Reference" "C6" (at 127.381 31.8516 0)
+    (property "Reference" "C?" (at 127.381 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 127.381 34.163 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 125.4252 36.83 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 125.4252 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 124.46 33.02 0)
@@ -3663,12 +3565,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C6") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C4") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -3677,13 +3579,13 @@
   (symbol (lib_id "Device:C") (at 201.93 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d42220ad-38b6-4814-8d5d-34af3eb1f8f3)
-    (property "Reference" "C11" (at 204.851 31.8516 0)
+    (property "Reference" "C?" (at 204.851 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 204.851 34.163 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 202.8952 36.83 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 202.8952 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 201.93 33.02 0)
@@ -3694,12 +3596,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C11") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C9") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -3708,7 +3610,7 @@
   (symbol (lib_id "power:GND") (at 38.1 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d9ddc42c-8a91-4d28-a33d-bbfebee893dd)
-    (property "Reference" "#PWR06" (at 38.1 153.67 0)
+    (property "Reference" "#PWR?" (at 38.1 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 38.227 151.7142 0)
@@ -3724,12 +3626,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -3738,7 +3640,7 @@
   (symbol (lib_id "power:GND") (at 190.5 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dc47ca2c-4d56-48bc-8da2-07aa1bba1fcc)
-    (property "Reference" "#PWR018" (at 190.5 59.69 0)
+    (property "Reference" "#PWR?" (at 190.5 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 190.627 57.7342 0)
@@ -3754,9 +3656,34 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
+      (project "electrium-esc-v2"
+        (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
+          (reference "#PWR026") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3.3V") (at 119.38 132.08 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e0c93d18-5b91-4ccd-a220-e4737383a087)
+    (property "Reference" "#PWR019" (at 119.38 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 119.38 128.27 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 119.38 132.08 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 119.38 132.08 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6c455a5a-7e14-4893-a8bf-a8bfc9ca9192))
+    (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
           (reference "#PWR019") (unit 1)
@@ -3768,7 +3695,7 @@
   (symbol (lib_id "power:GND") (at 30.48 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e1cf1f93-1334-45aa-a38b-4b715c0910db)
-    (property "Reference" "#PWR02" (at 30.48 113.03 0)
+    (property "Reference" "#PWR?" (at 30.48 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 30.607 111.0742 0)
@@ -3784,12 +3711,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -3798,7 +3725,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 22.86 102.87 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eccbd7da-fdd4-417f-9115-bc4f3fa97f69)
-    (property "Reference" "J2" (at 21.59 99.06 0)
+    (property "Reference" "J?" (at 21.59 99.06 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02" (at 21.59 109.22 0)
@@ -3815,12 +3742,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "J2") (unit 1)
+          (reference "J?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "J3") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -3835,7 +3762,7 @@
     (property "Value" "Debugger Pins" (at 43.18 168.91 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 43.18 176.53 0)
+    (property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" (at 43.18 176.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 43.18 176.53 0)
@@ -3857,7 +3784,7 @@
   (symbol (lib_id "power:GND") (at 29.21 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f4687377-ada4-4dc2-9d5f-e7f839ad34ff)
-    (property "Reference" "#PWR01" (at 29.21 58.42 0)
+    (property "Reference" "#PWR?" (at 29.21 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 29.337 56.4642 0)
@@ -3873,12 +3800,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -3887,7 +3814,7 @@
   (symbol (lib_id "power:+3.3V") (at 92.71 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f4c7d896-6ee3-4fae-bdab-6b573d608f95)
-    (property "Reference" "#PWR036" (at 92.71 36.83 0)
+    (property "Reference" "#PWR017" (at 92.71 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 92.71 29.21 0)
@@ -3903,7 +3830,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -3912,13 +3839,13 @@
   (symbol (lib_id "Device:R") (at 68.58 144.78 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f53f3a7b-e6aa-4459-847e-25a0369d3870)
-    (property "Reference" "R5" (at 68.58 139.5222 90)
+    (property "Reference" "R?" (at 68.58 139.5222 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 68.58 141.8336 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 68.58 143.002 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 68.58 143.002 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 68.58 144.78 0)
@@ -3929,12 +3856,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "R5") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "R7") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -3943,13 +3870,13 @@
   (symbol (lib_id "Device:C") (at 135.89 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f80a3778-3027-4987-a74c-54bcbdc9e37f)
-    (property "Reference" "C8" (at 138.811 47.0916 0)
+    (property "Reference" "C?" (at 138.811 47.0916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 138.811 49.403 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 136.8552 52.07 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 136.8552 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 135.89 48.26 0)
@@ -3960,12 +3887,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C8") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C6") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -3974,13 +3901,13 @@
   (symbol (lib_id "Device:C") (at 190.5 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fe950e41-aced-4947-a35e-52a1edee17a3)
-    (property "Reference" "C10" (at 193.421 47.0916 0)
+    (property "Reference" "C?" (at 193.421 47.0916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 193.421 49.403 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 191.4652 52.07 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 191.4652 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 190.5 48.26 0)
@@ -3991,12 +3918,12 @@
     (instances
       (project "RP2040_minimal"
         (path "/6531fadb-24de-4a4f-a44d-3d13e31f0217"
-          (reference "C10") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/3a1c0a34-127f-4b4c-9fd7-3b3e53fd2f6f"
-          (reference "C8") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
