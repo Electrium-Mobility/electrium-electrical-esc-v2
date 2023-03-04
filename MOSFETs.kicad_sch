@@ -671,7 +671,7 @@
   (symbol (lib_id "power:GND") (at 160.02 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 14c31d2a-8f01-416d-b42a-db6fb53f0f0e)
-    (property "Reference" "#PWR042" (at 160.02 120.65 0)
+    (property "Reference" "#PWR045" (at 160.02 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 160.02 119.38 0)
@@ -687,7 +687,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR045") (unit 1)
         )
       )
     )
@@ -696,7 +696,7 @@
   (symbol (lib_id "power:GND") (at 115.57 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 29325bad-c2bf-4a75-999a-b1f5c3bae2ee)
-    (property "Reference" "#PWR045" (at 115.57 60.96 0)
+    (property "Reference" "#PWR041" (at 115.57 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 115.57 59.69 0)
@@ -712,7 +712,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -721,7 +721,7 @@
   (symbol (lib_id "power:GND") (at 90.17 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4caa5a28-93a7-40bd-b09f-b5526adefec0)
-    (property "Reference" "#PWR040" (at 90.17 119.38 0)
+    (property "Reference" "#PWR043" (at 90.17 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 90.17 118.11 0)
@@ -737,7 +737,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
     )
@@ -746,7 +746,7 @@
   (symbol (lib_id "power:GND") (at 129.54 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 53b99a68-5e5a-484b-8a9d-6d573cc14d1e)
-    (property "Reference" "#PWR046" (at 129.54 60.96 0)
+    (property "Reference" "#PWR042" (at 129.54 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 129.54 59.69 0)
@@ -762,7 +762,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -771,7 +771,7 @@
   (symbol (lib_id "Device:C") (at 115.57 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 79d042c2-84c6-4192-869b-1dabbb3b76c2)
-    (property "Reference" "C31" (at 119.38 50.165 0)
+    (property "Reference" "C26" (at 119.38 50.165 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22u" (at 119.38 52.705 0)
@@ -788,7 +788,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "C31") (unit 1)
+          (reference "C26") (unit 1)
         )
       )
     )
@@ -797,7 +797,7 @@
   (symbol (lib_id "Transistor_FET:IRF3205") (at 123.19 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7b0cb12b-f9a1-4874-baf5-7f2180f5fce9)
-    (property "Reference" "Q3" (at 129.54 73.025 0)
+    (property "Reference" "Q2" (at 129.54 73.025 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "IRF3205" (at 129.54 75.565 0)
@@ -815,7 +815,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "Q3") (unit 1)
+          (reference "Q2") (unit 1)
         )
       )
     )
@@ -824,7 +824,7 @@
   (symbol (lib_id "Transistor_FET:IRF3205") (at 157.48 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7f8ca53f-8dae-4fb1-8475-32ba3de2d1d9)
-    (property "Reference" "Q5" (at 163.83 74.295 0)
+    (property "Reference" "Q3" (at 163.83 74.295 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "IRF3205" (at 163.83 76.835 0)
@@ -842,7 +842,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "Q5") (unit 1)
+          (reference "Q3") (unit 1)
         )
       )
     )
@@ -851,7 +851,7 @@
   (symbol (lib_id "Device:R") (at 90.17 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8b79c56e-d4e3-4198-98a4-c2f35904efda)
-    (property "Reference" "R17" (at 92.71 103.505 0)
+    (property "Reference" "R10" (at 92.71 103.505 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" ".01" (at 92.71 106.045 0)
@@ -868,7 +868,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "R17") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
     )
@@ -877,7 +877,7 @@
   (symbol (lib_id "Device:R") (at 160.02 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 93294858-aba2-455e-afd8-9b5fe97c4d82)
-    (property "Reference" "R19" (at 162.56 104.775 0)
+    (property "Reference" "R12" (at 162.56 104.775 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" ".01" (at 162.56 107.315 0)
@@ -894,7 +894,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "R19") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
     )
@@ -903,7 +903,7 @@
   (symbol (lib_id "power:GND") (at 125.73 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9359bc02-c1ad-45eb-8ffa-4e04224fadf1)
-    (property "Reference" "#PWR041" (at 125.73 119.38 0)
+    (property "Reference" "#PWR044" (at 125.73 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 125.73 118.11 0)
@@ -919,7 +919,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -928,7 +928,7 @@
   (symbol (lib_id "power:GND") (at 102.87 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 99b5232d-ae0d-42b7-af3e-994c47ebed0e)
-    (property "Reference" "#PWR044" (at 102.87 60.96 0)
+    (property "Reference" "#PWR040" (at 102.87 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 102.87 59.69 0)
@@ -944,7 +944,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
     )
@@ -953,7 +953,7 @@
   (symbol (lib_id "Transistor_FET:IRF3205") (at 123.19 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a0c7bb08-c8d0-4b8b-812a-5e2f1e0d7b3f)
-    (property "Reference" "Q4" (at 129.54 88.265 0)
+    (property "Reference" "Q5" (at 129.54 88.265 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "IRF3205" (at 129.54 90.805 0)
@@ -971,7 +971,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "Q4") (unit 1)
+          (reference "Q5") (unit 1)
         )
       )
     )
@@ -1007,7 +1007,7 @@
   (symbol (lib_id "Device:C_Polarized_US") (at 129.54 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bb27a746-e859-4a45-acc5-b784f98467e1)
-    (property "Reference" "C28" (at 133.35 49.53 0)
+    (property "Reference" "C27" (at 133.35 49.53 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3300u" (at 133.35 52.07 0)
@@ -1024,7 +1024,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "C28") (unit 1)
+          (reference "C27") (unit 1)
         )
       )
     )
@@ -1033,7 +1033,7 @@
   (symbol (lib_id "Device:C") (at 102.87 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c78fd99d-34c6-4e5f-98d8-258fbbc8ad96)
-    (property "Reference" "C30" (at 106.68 50.165 0)
+    (property "Reference" "C25" (at 106.68 50.165 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22u" (at 106.68 52.705 0)
@@ -1050,7 +1050,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "C30") (unit 1)
+          (reference "C25") (unit 1)
         )
       )
     )
@@ -1059,7 +1059,7 @@
   (symbol (lib_id "Transistor_FET:IRF3205") (at 87.63 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c8e7d888-c8ed-448c-9b5f-0530093d99f2)
-    (property "Reference" "Q2" (at 93.98 88.265 0)
+    (property "Reference" "Q4" (at 93.98 88.265 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "IRF3205" (at 93.98 90.805 0)
@@ -1077,7 +1077,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "Q2") (unit 1)
+          (reference "Q4") (unit 1)
         )
       )
     )
@@ -1086,7 +1086,7 @@
   (symbol (lib_id "Device:R") (at 125.73 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d3f51a1b-5a90-4cbd-a3bd-1f4b6db38b66)
-    (property "Reference" "R18" (at 128.27 103.505 0)
+    (property "Reference" "R11" (at 128.27 103.505 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" ".01" (at 128.27 106.045 0)
@@ -1103,7 +1103,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "R18") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
     )
@@ -1112,7 +1112,7 @@
   (symbol (lib_id "Device:C") (at 90.17 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e28ea468-a27c-45c7-b305-a0153f8f67c9)
-    (property "Reference" "C29" (at 93.98 50.165 0)
+    (property "Reference" "C24" (at 93.98 50.165 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22u" (at 93.98 52.705 0)
@@ -1129,7 +1129,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "C29") (unit 1)
+          (reference "C24") (unit 1)
         )
       )
     )
@@ -1138,7 +1138,7 @@
   (symbol (lib_id "power:GND") (at 90.17 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fd96bf9b-7833-4bd1-8b5b-f2f289e737e3)
-    (property "Reference" "#PWR043" (at 90.17 60.96 0)
+    (property "Reference" "#PWR039" (at 90.17 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 90.17 59.69 0)
@@ -1154,7 +1154,7 @@
     (instances
       (project "electrium-esc-v2"
         (path "/be00c12c-11fa-42cb-8a0b-46fcd24b2ced/8dc320a8-b146-43fb-8257-78c282d43b52"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
     )
