@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 0.875,
+          "width": 0.2
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -55,7 +55,11 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|179462000|65890000|5d295aa4-ef0b-46ac-9b80-9d642d92e19b|cd4f7b06-3b14-4664-8ba5-d68987fbbb81",
+        "clearance|184362000|70790000|b2295701-f46d-4d9b-a5d2-15dde33ed499|30d75f77-cf92-46bd-ae81-4f62b05f26ea",
+        "clearance|184462000|65890000|83d62d55-1d98-48a7-b09f-b9653e912c90|77947035-daf1-4419-adc8-da524f7fc0ce"
+      ],
       "meta": {
         "version": 2
       },
@@ -175,17 +179,13 @@
         0.0,
         0.0,
         0.0,
-        0.0,
         0.1524,
         0.1778,
         0.2032,
-        0.254
+        0.254,
+        2.54
       ],
       "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        },
         {
           "diameter": 0.0,
           "drill": 0.0
@@ -394,7 +394,7 @@
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
-      "lib_symbol_issues": "ignore",
+      "lib_symbol_issues": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
