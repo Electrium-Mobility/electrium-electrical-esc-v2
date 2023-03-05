@@ -1,10 +1,10 @@
-### Footprint positions - created on Sat Mar  4 23:09:16 2023 ###
+### Footprint positions - created on Sat Mar  4 23:20:29 2023 ###
 ### Printed by KiCad version (7.0.0)
 ## Unit = mm, Angle = deg.
 ## Side : bottom
 # Ref     Val       Package                                           PosX       PosY       Rot  Side
-C27       3300u     CP_Radial_D22.0mm_P10.00mm_SnapIn             219.2000  -114.8000  180.0000  bottom
-R10       .01       R_2512_6332Metric_Pad1.40x3.35mm_HandSolder   226.9450  -115.2000  180.0000  bottom
-R11       .01       R_2512_6332Metric_Pad1.40x3.35mm_HandSolder   227.0000  -100.8000  180.0000  bottom
-R12       .01       R_2512_6332Metric_Pad1.40x3.35mm_HandSolder   226.7500   -87.6000  180.0000  bottom
+C27       3300u     CP_Radial_D22.0mm_P10.00mm_SnapIn             165.5065  -113.3930  180.0000  bottom
+R10       .01       R_2512_6332Metric_Pad1.40x3.35mm_HandSolder   173.2515  -113.7930  180.0000  bottom
+R11       .01       R_2512_6332Metric_Pad1.40x3.35mm_HandSolder   173.3065   -99.3930  180.0000  bottom
+R12       .01       R_2512_6332Metric_Pad1.40x3.35mm_HandSolder   173.0565   -86.1930  180.0000  bottom
 ## End
